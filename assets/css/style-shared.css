@@ -1,5 +1,24 @@
-.site-header .wp-block-search .wp-block-search__input {
-	border: 2px solid #fff;
+body {
+  font-family: var(--wp--preset--font-family--recursive);
+  font-weight: var(--recursive-weight);
+  font-variation-settings: 'MONO' var(--recursive-mono),
+  'CASL' var(--recursive-casual), 'slnt' var(--recursive-slant),
+  'CRSV' var(--recursive-cursive);
+
+}
+
+.wp-block-query > * {
+  --recursive-weight: 400;
+  --recursive-mono: 1;
+
+  font-variation-settings: 'MONO' var(--recursive-mono),
+  'CASL' var(--recursive-casual), 'slnt' var(--recursive-slant),
+  'CRSV' var(--recursive-cursive);
+
+} */
+
+h2 > a {
+  color: #cd2653;
 }
 
 .wp-block-search .wp-block-search__button {

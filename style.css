@@ -3,7 +3,7 @@ Theme Name: Valinor
 Author: Carlos Araya
 Author URI: https://publishing-project.rivendellweb.net/
 Theme URI:
-Version: 1.2.4
+Version: 1.0.0
 Description: An experimental full site editing theme
 Text Domain: valinor
 Requires at least: 5.5
@@ -21,6 +21,7 @@ with others.
 body {
 	overflow-x: hidden;
 }
+
 
 * {
 	box-sizing: border-box;
