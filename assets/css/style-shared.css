@@ -17,84 +17,74 @@ body {
 
 } */
 
-h2 > a {
-  color: #cd2653;
+/*--------------------------------------------------------------
+# Defaults
+--------------------------------------------------------------*/
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
-.wp-block-search .wp-block-search__button {
-	border: 2px solid #fff;
-	border-radius: 4px;
+/*
+ * text-underline-offset doesn't work in Chrome at all 👎
+ * But looks nice in Safari/Firefox, so let's keep it and
+ * maybe Chrome will support it soon.
+ */
+ a {
+	cursor: pointer;
+	text-underline-offset: 3px;
+	text-decoration-skip-ink: all;
 }
 
-input[type=search],
-.wp-block-search .wp-block-search__input,
-select {
-	border-radius: 4px;
+a:hover {
+	text-decoration-style: dotted;
+	text-decoration-skip-ink: none;
 }
 
-input,
-textarea,
-select {
-	font-size: var(--wp--preset--font-size--small);
-	padding: 0.25em;
+/* 
+  Gutenberg removes this underline, but valinor 
+  uses it. 
+ */
+/* .site-header h1.wp-block-site-title a:not(:hover):not(:focus):not(:active) {
+	text-decoration: underline;
+} */
+
+/*
+ * Alignment styles.
+ * These rules are temporary, and should not be relied on or 
+ * modified too heavily by themes or plugins that build on 
+ * Twenty Twenty-Two. These are meant to be a precursor to 
+ * a global solution provided by the Block Editor. 
+ * 
+ * Relevant issues:
+ * https://github.com/WordPress/gutenberg/issues/35607
+ * https://github.com/WordPress/gutenberg/issues/35884
+ */
+
+.wp-site-blocks,
+body > .is-root-container,
+.edit-post-visual-editor__post-title-wrapper,
+.wp-block-group.alignfull,
+.is-root-container .wp-block[data-align="full"] > .wp-block-group {
+	padding-left: var(--wp--custom--spacing--outer);
+	padding-right: var(--wp--custom--spacing--outer);
 }
 
-/* Date and categories are all block elements,
-we need to adjust them to align them better next to each other.
--The downside to making this change in the editor is that the block is harder to select.
-The post meta tag for the wrapper is kept here for increased flexibility.
-*/
-.post-meta .wp-block-post-date,
-.post-meta .wp-block-post-terms.taxonomy-category {
-	display: inline;
+.wp-site-blocks .alignfull,
+.is-root-container .wp-block[data-align="full"] {
+	margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	width: unset;
 }
 
-.post-meta .wp-block-post-date {
-	margin-right: .5em;
-}
-
-.post-nav {
-	clear: both;
-}
-
-.post-nav .post-navigation-link-previous {
-	float: left;
-}
-
-.post-nav .post-navigation-link-next {
-	float: right;
-}
-
-.wp-block-query-pagination {
-	justify-content: space-between;
-}
-
-/* Remove these styles when blocks have margin controls */
-.site-header .wp-block-columns {
-	margin-bottom: 0;
-}
-
-.blocks-gallery-caption,
-.comment-body {
-	margin-bottom: 2em;
-}
-
-@media ( min-width: 600px ) {
-	.is-style-armando-media-overlap {
-		width: 150%;
-	}
-}
-
-/* Reset the negative margin that the block editor adds.*/
-.wp-block-post-comments .comment-author {
-	margin-left: 0;
-}
-
-.wp-block-post-comments .comment-author .avatar {
-	height: initial;
-	width: initial;
-}
-
-.wp-block-post-comments .comment-content {
-	margin-top: 1rem;
+/* Blocks inside columns don't have negative margins. */
+.wp-site-blocks .wp-block-columns .wp-block-column .alignfull,
+.is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"],
+/* We also want to avoid stacking negative margins. */
+.wp-site-blocks .alignfull:not(.wp-block-group) .alignfull,
+.is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: inherit;
 }

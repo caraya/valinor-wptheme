@@ -20,6 +20,7 @@ with others.
 /* Make sure that full width blocks are full width, reset the browser margins. */
 body {
 	overflow-x: hidden;
+  font-family: "Recursive", Verdana, sans-serif;
 }
 
 
@@ -43,11 +44,10 @@ pre {
 	white-space: pre-wrap;
 }
 
-.wp-site-blocks a {
-	text-underline-offset: 2px;
-}
-
-/* Adjust underlines to improve accessibility. This is a temporary solution.*/
+/* 
+  Adjust underlines to improve accessibility.
+  This is a temporary solution.
+*/
 .wp-site-blocks a:hover {
 	text-decoration: none;
 }
@@ -117,46 +117,46 @@ causing long titles with links to overflow. */
 }
 
 /* Sticky header */
-.is-style-armando-sticky-header {
+.is-style-valinor-sticky-header {
 	position: sticky;
 	top: 0;
 }
 
 /* Move the position down to adjust for the WordPress admin bar */
-.admin-bar .is-style-armando-sticky-header {
+.admin-bar .is-style-valinor-sticky-header {
 	position: sticky;
 	top: 32px;
 }
 
 /* Revert the sticky position on smaller screens */
 @media screen and (max-width: 782px) {
-	.is-style-armando-sticky-header {
+	.is-style-valinor-sticky-header {
 		position: initial;
 	}
 }
 
 /* Sidebars */
-.armando-sidebar-right,
-.armando-sidebar-left {
+.valinor-sidebar-right,
+.valinor-sidebar-left {
 	height: 100%;
 }
 
 @media (min-width: 782px) {
-	.armando-has-sidebar-right .wp-block-column:not(:first-child),
-	.armando-has-sidebar-left .wp-block-column:not(:first-child) {
+	.valinor-has-sidebar-right .wp-block-column:not(:first-child),
+	.valinor-has-sidebar-left .wp-block-column:not(:first-child) {
 		margin-left: 0;
 		position: sticky;
 	}
 }
 
 @media ( min-width: 600px ) {
-	.armando-sidebar-right,
-	.armando-sidebar-left {
+	.valinor-sidebar-right,
+	.valinor-sidebar-left {
 		position: sticky;
 		border-left: 1px solid var(--wp--preset--color--white);
 	}
 
-	.armando-sidebar-left {
+	.valinor-sidebar-left {
 		position: sticky;
 		border-right: 1px solid var(--wp--preset--color--white);
 	}
@@ -191,4 +191,3 @@ causing long titles with links to overflow. */
 		padding: 8px;
 	}
 }
-

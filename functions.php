@@ -19,8 +19,14 @@ if ( ! function_exists( 'valinor_support' ) ) :
 		add_theme_support( 'editor-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style( 'style.css' );
-
+		// add_editor_style( 'style.css' );
+		add_editor_style(
+			array(
+				'./assets/css/blocks.css',
+				'./assets/css/style-shared.css',
+        './style.css',
+			)
+		);
 		// Add support for custom units.
 		add_theme_support( 'custom-units' );
 	}
@@ -28,24 +34,16 @@ if ( ! function_exists( 'valinor_support' ) ) :
 endif;
 
 /**
- * Enqueue font-related CSS
- * 
- * @since 1.0.0
+ * Enqueue scripts and styles.
  */
-function valinor_enqueue_recursive_font() {
+function valinor_scripts() {
+  // Enqueue font-related CSS
   wp_enqueue_style(
     'valinor-fonts',
     get_template_directory_uri() . '/assets/css/recursive-styles.css',
     false,
-    wp_get_theme()->get( 'Version' ),
-    'all'
+    wp_get_theme()->get( 'Version' )
   );
-}
-
-/**
- * Enqueue scripts and styles.
- */
-function valinor_scripts() {
 
 	// Enqueue theme stylesheet.
 	wp_enqueue_style(
@@ -54,19 +52,18 @@ function valinor_scripts() {
     array(),
     wp_get_theme()->get( 'Version' )
   );
-
-  // Enqueue Editor styles
-  wp_enqueue_style(
-    'valinor-editor-style',
-    get_template_directory_uri() . '/assets/css/editor.css',
-    array(),
-    wp_get_theme()->get( 'Version' )
-  );
 	
   // Enqueue alignments stylesheet.
 	wp_enqueue_style(
     'valinor-alignments-style',
     get_template_directory_uri() . '/assets/css/alignments-front.css',
+    array(),
+    wp_get_theme()->get( 'Version' )
+  );
+
+  wp_enqueue_style(
+    'valinor-custom-styles',
+    get_template_directory_uri() . '/assets/css/valinor-custom-styles.css',
     array(),
     wp_get_theme()->get( 'Version' )
   );
@@ -90,9 +87,6 @@ function valinor_blocks_block_editor_script() {
     true );
 }
 add_action( 'enqueue_block_editor_assets', 'valinor_blocks_block_editor_script' );
-
-add_action( 'wp_enqueue_scripts', 'valinor_enqueue_recursive_font' );
-
 
 // Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';

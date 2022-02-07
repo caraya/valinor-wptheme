@@ -1,0 +1,85 @@
+/* 
+  Valinor specific adaptations
+*/
+
+/*
+  Change the color of all the links. 
+  
+  This is a temporary solution since there I couldn't find
+  a way to make this change globally in the editor
+*/
+.wp-site-blocks a,
+.wp-block-navigation-item__label {
+  color: #cd2653;
+	text-underline-offset: 2px;
+}
+
+/*
+  Add margins to the main portion of the archive page.
+  
+  I couldn't find a way to do this globally only for some 
+  archives like the index page
+*/
+.site-main {
+  margin-inline-start: 25VW;
+  margin-inline-end: 25vw;
+}
+
+/*
+  Add margins to the header text but not the figure above it
+
+  It would be easier to add the margins to the full header 
+  but the header figure would no longer cover the full width
+  of the page
+*/
+.site-header > div[class^="wp-container"]{ 
+  margin-inline-start: 10vw;
+  margin-inline-end: 10vw;
+}
+
+/*
+  Move the tagline closer to the title by 
+  removing the top margin
+*/
+.wp-block-site-tagline {
+  margin-top: 0;
+}
+
+/* 
+  MORE LINK WORK
+  
+  1. Give the excerpt outer block position relative
+  
+  2. Give the more-link container padding so that when we hoveer
+  over it it looks bigger than it really is
+
+  3. Position more-text link as an absolute object
+  and position it to the right of the content 
+
+*/
+.wp-block-post-excerpt {
+  position: relative;
+}
+
+.wp-block-post_excerpt__more-link {
+  padding: calc(0.667em + 2px);
+  padding-right: calc(1.333em + 2px);
+  padding-bottom: calc(0.667em + 2px);
+  padding-left: calc(1.333em + 2px);
+}
+
+.wp-block-post-excerpt__more-text a {
+  position: absolute;
+  right: 0;
+
+  text-decoration: none;
+}
+
+/*
+  Change the color of the link's text and the background
+  on hover
+*/
+.wp-block-post-excerpt__more-text a:hover {  
+  color: white;
+  background-color: #cd2653;
+}
