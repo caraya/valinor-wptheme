@@ -2,6 +2,7 @@
   Valinor specific adaptations
 */
 
+
 /*
   Change the color of all the links. 
   
@@ -9,11 +10,16 @@
   a way to make this change globally in the editor
 */
 .wp-site-blocks a,
-.wp-block-navigation-item__label {
-  color: #cd2653;
+.wp-block-navigation-item__label,
+.wp-block-latest-posts li a {
+  color: var(--wp--preset--color--link-red);
 	text-underline-offset: 2px;
 }
 
+p.has-small-font-size {
+  color: var(--wp--preset--color--black);
+  margin: 0 auto;
+}
 /*
   Add margins to the main portion of the archive page.
   
@@ -54,7 +60,7 @@
   over it it looks bigger than it really is
 
   3. Position more-text link as an absolute object
-  and position it to the right of the content 
+  and position it in the bottom right of the content 
 
 */
 .wp-block-post-excerpt {
@@ -81,5 +87,10 @@
 */
 .wp-block-post-excerpt__more-text a:hover {  
   color: white;
-  background-color: #cd2653;
+  background-color: var(--wp--preset--color--link-red);
+}
+
+select[id^="wp-block-archives"] {
+  width: 30vw;
+  height: 2rem;
 }
