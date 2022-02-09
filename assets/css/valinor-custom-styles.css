@@ -16,10 +16,6 @@
 	text-underline-offset: 2px;
 }
 
-p.has-small-font-size {
-  color: var(--wp--preset--color--black);
-  margin: 0 auto;
-}
 /*
   Add margins to the main portion of the archive page.
   

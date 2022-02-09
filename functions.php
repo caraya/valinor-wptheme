@@ -24,6 +24,7 @@ if ( ! function_exists( 'valinor_support' ) ) :
 			array(
 				'./assets/css/blocks.css',
 				'./assets/css/style-shared.css',
+        './assets/css/valinor-custom-styles.css',
         './style.css',
 			)
 		);
