@@ -1,7 +1,7 @@
 <!-- wp:group {"layout":{"align": "wide", "type":"flex","allowOrientation":false}, "style":{"elements":{"link":{"color":{"text":"var:preset|color|link-red"}}}},"backgroundColor":"white","textColor":"black"} -->
-<div class="wp-block-group alignwide has-white-color has-dark-blue-background-color has-text-color has-background has-link-color">
-	<!-- wp:columns {"align":"wide"} -->
-	<div class="wp-block-columns alignwide">
+<div class="wp-block-group alignwide has-white-color has-white-blue-background-color has-text-color has-background has-link-color">
+	<!-- wp:columns {"align":"full"} -->
+	<div class="wp-block-columns alignfull">
 		<!-- wp:column -->
       <div class="wp-block-column">
         <!-- wp:search /-->
@@ -9,13 +9,17 @@
         <!-- wp:latest-posts /-->
       </div>
 		<!-- /wp:column -->
+    
+    <!-- wp:column {"width":30}-->
+      <div class="wp-block-column" style="width:30px"></div>
+    <!-- /wp:column -->
 
     <!-- wp:column -->
 		<div class="wp-block-column">
 			<!-- wp:paragraph {style: "color": "black"}-->
 			<p><strong>Latest Posts</strong></p>
-			<!-- /wp:paragraph -->
       <!-- wp:latest-posts {"style":{"elements":{"link":{"color":{"text":"var:preset|color|link-red"}}}},"backgroundColor":"white"} /-->
+			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:column -->
 	
@@ -26,11 +30,11 @@
     <hr class="wp-block-separator is-style-wide" />
     <!-- /wp:separator -->
 
-    <!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
+    <!-- wp:group {"layout":{"type":"flex","allowOrientation":false} isStackedOnMoblie} -->
     <div class="wp-block-group">
       <!-- wp:paragraph {"fontSize":"small"} -->
-      <p class="has-small-font-size">Copyright 2022</p>
-      <!-- wp:site-title {"level":0,"fontSize":"small"} /-->
+        <p class="has-small-font-size">Copyright 2022</p>
+          <!-- wp:site-title {"level":0,"fontSize":"small"} /-->
       <!-- /wp:paragraph -->
     </div><!-- /wp:group -->
 </div>
