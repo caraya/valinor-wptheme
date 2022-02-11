@@ -87,6 +87,6 @@
 }
 
 select[id^="wp-block-archives"] {
-  width: 25vw;
+  width: 20vw;
   height: 2rem;
 }
