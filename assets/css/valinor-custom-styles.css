@@ -90,3 +90,13 @@ select[id^="wp-block-archives"] {
   width: 20vw;
   height: 2rem;
 }
+
+.wp-block-post-navigation-link {
+  display: flex;
+  flex-flow: column;
+  
+  align-items: center;
+  justify-content: flex-end;
+
+  text-indent: 0;
+}
