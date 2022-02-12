@@ -100,3 +100,8 @@ select[id^="wp-block-archives"] {
 
   text-indent: 0;
 }
+
+.post-navigation-link__label:after {
+  content: "\A";
+  white-space: pre;
+}
