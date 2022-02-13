@@ -28,6 +28,16 @@
 }
 
 /*
+  Add margins to the element with id "wp-block-archives"
+
+  Couldn't find a way to do this from the full site editor.
+*/
+select[id^="wp-block-archives"] {
+  width: 20vw;
+  height: 2rem;
+}
+
+/*
   Add margins to the header text but not the figure above it
 
   It would be easier to add the margins to the full header 
@@ -86,10 +96,6 @@
   background-color: var(--wp--preset--color--link-red);
 }
 
-select[id^="wp-block-archives"] {
-  width: 20vw;
-  height: 2rem;
-}
 
 .wp-block-post-navigation-link {
   display: flex;
@@ -105,3 +111,4 @@ select[id^="wp-block-archives"] {
   content: "\A";
   white-space: pre;
 }
+
