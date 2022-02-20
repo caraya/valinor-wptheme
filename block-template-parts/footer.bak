@@ -1,0 +1,36 @@
+<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|link-red"}}}},"backgroundColor":"white","textColor":"black","className":"alignwide has-white-color has-white-blue-background-color","layout":{"align":"wide","type":"flex","allowOrientation":false}} -->
+<div class="wp-block-group alignwide has-white-color has-black-color has-white-background-color has-text-color has-background has-link-color"><!-- wp:columns {"align":"full"} -->
+  <div class="wp-block-columns alignfull"><!-- wp:column -->
+
+  <div class="wp-block-column"><!-- wp:search {"label":"Search","buttonPosition":"button-inside","buttonUseIcon":true} /-->  
+    <!-- wp:spacer {"height":"40px"} -->
+    <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->  
+    <!-- wp:archives {"displayAsDropdown":true} /--></div>
+  <!-- /wp:column -->
+  
+  <!-- wp:column -->
+  <div class="wp-block-column">
+    <!-- wp:paragraph -->
+      <p>Latest Posts</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:latest-posts /-->
+  </div>
+  <!-- /wp:column -->
+  
+  </div>
+  <!-- /wp:columns -->
+
+  <!-- wp:spacer {"height":"10px"} -->
+    <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer -->
+  
+  <!-- wp:pattern {"slug":"valinor/rw-credits"} /-->
+
+  <!-- wp:spacer {"height":"10px"} -->
+    <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer -->
+  
+</div>
+<!-- /wp:group -->

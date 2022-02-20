@@ -1,11 +1,3 @@
-/* 
-  Valinor specific adaptations
-
-  Current draft of styles for the Valinor theme
-
-  @author: Carlos Araya
-*/
-
 
 /*
   Change the color of all the links. 
@@ -169,4 +161,13 @@ div[class*="wp-container"].wp-block-group {
 
 .wp-block-search__inside-wrapper {
   width: 75%;
+}
+
+footer.site-footer {
+  margin-block-start: 6rem;
+}
+
+.footer-credit {
+  color: var(--wp--preset--color--black);
+  margin: 0 auto;
 }

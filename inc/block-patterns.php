@@ -14,6 +14,11 @@ if ( function_exists( 'register_block_pattern_category' ) ) {
 		'elements',
 		array( 'label' => esc_html__( 'Design elements', 'valinor' ) )
 	);
+
+  register_block_pattern_category(
+    'valinor',
+    array( 'label' => esc_html__( 'Valinor patterns', 'valinor' ) )
+  );
 }
 
 /**
@@ -268,6 +273,19 @@ if ( function_exists( 'register_block_pattern' ) ) {
 				',
 			)
 		);
+
+		register_block_pattern(
+      'valinor/wp-credits',
+      array(
+        'title'      => esc_html__( 'WordPress Credit', 'valinor' ),
+				'categories' => array( 'valinor' ),
+        'content'    => 
+            '<!-- wp:paragraph --> <p>' . 
+            sprintf( esc_html__( 'Powered by %s', 'valinor' ), '<a href="' . esc_url( __( 'https://wordpress.org', 'valinor' ) ) . '" rel="nofollow">WordPress</a>. ' ) .  
+            sprintf( esc_html__( 'Theme: %s', 'valinor' ), '<a href="' . esc_url( __( 'https://publishing-project.rivendellweb.net', 'valinor' ) ) . '" rel="nofollow">Valinor</a>' ) . '</p> <!-- /wp:paragraph -->' ,
+        'inserter'   => true
+      )
+    );
 	}
 	add_action( 'init', 'valinor_register_block_patterns', 9 );
 }

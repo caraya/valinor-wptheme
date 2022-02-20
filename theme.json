@@ -82,7 +82,7 @@
       "fontStyle": true,
       "fontWeight": true,
       "letterSpacing": true,
-      "lineHeight": false,
+      "lineHeight": true,
       "textDecoration": true,
       "textTransform": true,
       "fontFamilies": [
