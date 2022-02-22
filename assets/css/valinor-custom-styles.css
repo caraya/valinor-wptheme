@@ -30,7 +30,6 @@
 */
 select[id*="wp-block-archives"] {
   width: 20vw;
-  height: 2rem;
 }
 
 /*
@@ -43,14 +42,6 @@ select[id*="wp-block-archives"] {
 .site-header > div[class*="wp-container"]{ 
   margin-inline-start: 10vw;
   margin-inline-end: 10vw;
-}
-
-/*
-  Move the tagline closer to the title by 
-  removing the top margin
-*/
-.wp-block-site-tagline {
-  margin-top: 0;
 }
 
 /* 
@@ -70,6 +61,7 @@ select[id*="wp-block-archives"] {
 }
 
 .wp-block-post_excerpt__more-link {
+  font-size: 0.9em;
   padding: calc(0.667em + 2px);
   padding-right: calc(1.333em + 2px);
   padding-bottom: calc(0.667em + 2px);
