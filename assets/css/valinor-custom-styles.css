@@ -18,13 +18,12 @@
   I couldn't find a way to do this globally only for some 
   archives like the index page
 */
+
 .site-main {
-  width: 60vw;
-  margin: 10rem auto;
-  /* margin-inline-start: 25VW;
+  margin-inline-start: 25VW;
   margin-inline-end: 25vw;
-  margin-block-start: 10vw;
-  margin-block-end: 10vw; */
+  margin-block-start: 10rem;
+  margin-block-end: 10rem;
 }
 
 /*
@@ -91,15 +90,15 @@
 /*
   Formats navigation links so they will line up on the same column
 */
-/* .wp-block-post-navigation-link {
+.wp-block-post-navigation-link {
   display: flex;
   flex-flow: row;
   
-  align-items: center;
-  justify-content: flex-end;
+  align-items: left;
+  justify-content: flex-start;
 
   text-indent: 0;
-} */
+}
 
 /*
   Inserts a line break between the label for the post navigation and the link
