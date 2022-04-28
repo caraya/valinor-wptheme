@@ -42,9 +42,19 @@
       ],
       "palette": [
         {
+          "slug": "strong-magenta",
+          "color": "#a156b4",
+          "name": "Strong magenta"
+        },
+        {
           "slug": "link-red",
           "color": "#cd2653",
           "name": "Link red"
+        },
+        {
+          "slug": "very-dark-grey",
+          "color": "rgb(131, 12, 8)",
+          "name": "Very dark grey"
         }
       ]
     },
@@ -54,7 +64,7 @@
       "wideSize": "1000px"
     },
     "spacing": {
-      "blockGap": true,
+      "blockGap": null,
       "padding": true,
       "margin": true,
       "units": [
@@ -79,7 +89,7 @@
         {
           "fontFamily": "\"Recursive\", sans-serif",
           "slug": "recursive",
-          "name": "Recursive Variable Font"
+          "name": "Recursive"
         },
         {
           "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
@@ -88,13 +98,11 @@
         },
         {
           "fontFamily": "Geneva, Tahoma, Verdana, sans-serif",
-          "slug": "geneva-verdana",
-          "name": "Geneva, Tahoma, Verdana"
+          "slug": "geneva-verdana"
         },
         {
           "fontFamily": "Cambria, Georgia, serif",
-          "slug": "cambria-georgia",
-          "name": "Cambria, Georgia"
+          "slug": "cambria-georgia"
         }
       ],
       "fontSizes": [
@@ -378,13 +386,11 @@
     },
     {
       "name": "sidebar-left",
-      "title": "Sidebar Left",
-      "area": "main"
+      "title": "Sidebar Left"
     },
     {
       "name": "sidebar-right",
-      "title": "Sidebar Right",
-      "area": "main"
+      "title": "Sidebar Right"
     }
   ],
   "customTemplates": [

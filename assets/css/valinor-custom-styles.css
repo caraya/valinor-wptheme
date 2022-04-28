@@ -5,12 +5,12 @@
   This is a temporary solution since there I couldn't find
   a way to make this change globally in the editor
 */
-.wp-site-blocks a,
+/* .wp-site-blocks a,
 .wp-block-navigation-item__label,
 .wp-block-latest-posts li a {
   color: var(--wp--preset--color--link-red);
 	text-underline-offset: 2px;
-}
+} */
 
 /*
   Add margins to the main portion of the archive page.
@@ -19,8 +19,12 @@
   archives like the index page
 */
 .site-main {
-  margin-inline-start: 25VW;
+  width: 60vw;
+  margin: 10rem auto;
+  /* margin-inline-start: 25VW;
   margin-inline-end: 25vw;
+  margin-block-start: 10vw;
+  margin-block-end: 10vw; */
 }
 
 /*
@@ -28,9 +32,9 @@
 
   Couldn't find a way to do this from the full site editor.
 */
-select[id*="wp-block-archives"] {
+/* select[id*="wp-block-archives"] {
   width: 20vw;
-}
+} */
 
 /*
   Add margins to the header text but not the figure above it
@@ -39,10 +43,10 @@ select[id*="wp-block-archives"] {
   but the header figure would no longer cover the full width
   of the page
 */
-.site-header > div[class*="wp-container"]{ 
+/* .site-header > div[class*="wp-container"]{ 
   margin-inline-start: 10vw;
   margin-inline-end: 10vw;
-}
+} */
 
 /* 
   MORE LINK WORK
@@ -87,7 +91,7 @@ select[id*="wp-block-archives"] {
 /*
   Formats navigation links so they will line up on the same column
 */
-.wp-block-post-navigation-link {
+/* .wp-block-post-navigation-link {
   display: flex;
   flex-flow: row;
   
@@ -95,7 +99,7 @@ select[id*="wp-block-archives"] {
   justify-content: flex-end;
 
   text-indent: 0;
-}
+} */
 
 /*
   Inserts a line break between the label for the post navigation and the link
@@ -117,7 +121,7 @@ select[id*="wp-block-archives"] {
   Uses div[class*="wp-container"] to determine if the 
   div we're targeting has a wp-container* class in it  
 */
-div[class*="wp-container"].wp-block-query-pagination {
+/* div[class*="wp-container"].wp-block-query-pagination {
   display: flex;
   gap: 0.5em;
   flex-wrap: row nowrap;
@@ -127,13 +131,13 @@ div[class*="wp-container"].wp-block-query-pagination {
   width: 80vw;
   margin-top: 4rem;
   margin-left: -250px;  
-}
+} */
 
 /*
   Change the layout of the pagination query 
   when the screen is smaller than 800px
 */
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   div[class*="wp-container"].wp-block-query-pagination {
     display: flex;
     gap: 0.5em;
@@ -162,4 +166,4 @@ footer.site-footer {
 .footer-credit {
   color: var(--wp--preset--color--black);
   margin: 0 auto;
-}
+} */

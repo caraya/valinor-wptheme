@@ -68,6 +68,13 @@ function valinor_scripts() {
     array(),
     wp_get_theme()->get( 'Version' )
   );
+
+  wp_enqueue_style(
+    'valinor-font-styles',
+    get_template_directory_uri() . '/assets/css/font-styles.css',
+    array(),
+    wp_get_theme()->get( 'Version' )
+  );
 }
 add_action( 'wp_enqueue_scripts', 'valinor_scripts' );
 
