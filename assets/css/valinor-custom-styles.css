@@ -104,7 +104,7 @@
   Inserts a line break between the label for the post navigation and the link
 */
 .post-navigation-link__label:after {
-  content: "\A";
+  content: "\A\A";
   white-space: pre;
 }
 
