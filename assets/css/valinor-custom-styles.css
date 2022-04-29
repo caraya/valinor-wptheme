@@ -89,16 +89,19 @@
 
 /*
   Formats navigation links so they will line up on the same column
+
+  Adds a border
 */
 .wp-block-post-navigation-link {
   display: flex;
   flex-flow: row;
-  
-  align-items: left;
-  justify-content: flex-start;
 
-  text-indent: 0;
+  border: 1px solid black;
 }
+
+/*
+  Adds a border to the post navigation links
+*/
 
 /*
   Inserts a line break between the label for the post navigation and the link
