@@ -102,7 +102,8 @@
           "slug": "tiny",
           "size": "16px",
           "name": "Tiny"
-        },{
+        },
+        {
           "slug": "small",
           "size": "18px",
           "name": "Small"
@@ -159,6 +160,22 @@
       }
     },
     "elements": {
+      "button": {
+        "outline": {
+          "offset": "3px",
+          "width": "3px",
+          "style": "dashed",
+          "color": "red"
+        },
+        ":hover": {
+          "outline": {
+            "offset": "3px",
+            "width": "3px",
+            "style": "solid",
+            "color": "blue"
+          }
+        }
+      },
       "link": {
         "color": {
           "text": "var(--wp--preset--color--link-red)"
@@ -170,7 +187,7 @@
       "h1": {
         "color": {
           "text": "var(--wp--preset--color--black)"
-        }, 
+        },
         "typography": {
           "fontSize": "var(--wp--preset--font-size--extra-large)"
         }
@@ -178,7 +195,7 @@
       "h2": {
         "color": {
           "text": "var(--wp--preset--color--black)"
-        }, 
+        },
         "typography": {
           "fontSize": "var(--wp--preset--font-size--large)"
         }
@@ -355,11 +372,13 @@
   "templateParts": [
     {
       "name": "comments",
-      "title": "Comments"
+      "title": "Comments",
+      "area": "uncategorized"
     },
     {
       "name": "comments",
-      "title": "Comments"
+      "title": "Comments",
+      "area": "uncategorized"
     },
     {
       "name": "footer",
@@ -374,17 +393,17 @@
     {
       "name": "main",
       "title": "Main",
-      "area": "main"
+      "area": "uncategorized"
     },
     {
       "name": "sidebar-left",
       "title": "Sidebar Left",
-      "area": "main"
+      "area": "uncategorized"
     },
     {
       "name": "sidebar-right",
       "title": "Sidebar Right",
-      "area": "main"
+      "area": "uncategorized"
     }
   ],
   "customTemplates": [

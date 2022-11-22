@@ -6,8 +6,9 @@ Theme URI:
 Version: 1.0.0
 Description: An experimental full site editing theme
 Text Domain: valinor
-Requires at least: 5.5
+Requires at least: 5.9
 Requires PHP: 7.4
+Tested up to: 6.1
 
 License: MIT License
 License URI: https://opensource.org/licenses/MIT
@@ -19,7 +20,7 @@ with others.
 
 /* Make sure that full width blocks are full width, reset the browser margins. */
 body {
-	overflow-x: hidden;
+  overflow-x: hidden;
   font-family: "Recursive", Verdana, sans-serif;
 }
 

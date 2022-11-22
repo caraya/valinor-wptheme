@@ -100,10 +100,6 @@
 }
 
 /*
-  Adds a border to the post navigation links
-*/
-
-/*
   Inserts a line break between the label for the post navigation and the link
 */
 .post-navigation-link__label:after {
